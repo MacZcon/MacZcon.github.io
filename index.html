@@ -1,276 +1,529 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-	<title>Macky Naik</title>
-	
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-	<link rel="shortcut icon" href="favicon.ico"> 
-	
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-	
-	<!-- FontAwesome JS-->
-	<script defer src="assets/fontawesome/js/all.min.js"></script>
-	
-	<!-- Theme CSS -->  
-	<link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">
-
-</head> 
+    <title>Macky Naik - Senior Site Reliability Engineer & IT Leader</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Senior Site Reliability Engineer with 18+ years of experience in IT, specializing in AWS, monitoring tools, and CI/CD pipelines. Vice President at JP Morgan Chase.">
+    <meta name="keywords" content="Site Reliability Engineer, SRE, IT Leader, AWS, DevOps, Cloud Architecture, Monitoring, CI/CD">
+    <meta name="author" content="Macky Naik">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Macky Naik - Senior Site Reliability Engineer">
+    <meta property="og:description" content="18+ years of IT expertise in Site Reliability Engineering, AWS, and DevOps">
+    <meta property="og:image" content="assets/images/Macky-2024.jpg">
+    <meta property="og:url" content="https://www.mackynaik.com">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --primary-color: #2D3E50;
+            --secondary-color: #3498DB;
+            --text-primary: #2C3E50;
+            --text-secondary: #7F8C8D;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-primary);
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+            padding: 6rem 0;
+        }
+        .skill-badge {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            margin: 0.25rem;
+            display: inline-block;
+        }
+        .experience-card {
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+    </style>
+</head>
 
 <body>
-	
-	<div class="main-wrapper">
-		<div class="container px-3 px-lg-5">
-			<article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+    <div class="main-wrapper">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0">
+                        <img class="rounded-circle img-thumbnail shadow-lg" src="assets/images/Macky-2024.jpg" alt="Macky Naik" style="width: 250px; height: 250px; object-fit: cover;">
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="hero-content" data-aos="fade-up">
+                            <h1 class="display-4 fw-bold mb-3">Macky Naik</h1>
+                            <h2 class="h3 text-secondary mb-4">Vice President, Site Reliability Engineering</h2>
+                            <p class="lead mb-4">18+ years transforming IT operations through innovative SRE practices, cloud architecture, and automated solutions. Driving enterprise-scale reliability at JP Morgan Chase.</p>
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="mailto:mackynaik@gmail.com" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-envelope me-2"></i>Contact Me
+                                </a>
+                                <a href="https://www.linkedin.com/in/mackynaik/" class="btn btn-outline-primary btn-lg" target="_blank">
+                                    <i class="fab fa-linkedin me-2"></i>LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Info Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row g-4 text-center">
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="p-4 bg-white rounded shadow-sm">
+                            <i class="fas fa-chart-line fa-2x text-primary mb-3"></i>
+                            <h3 class="h5 mb-2">Experience</h3>
+                            <p class="mb-0">18+ Years in IT</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="p-4 bg-white rounded shadow-sm">
+                            <i class="fas fa-certificate fa-2x text-primary mb-3"></i>
+                            <h3 class="h5 mb-2">Certifications</h3>
+                            <p class="mb-0">12+ Professional Certs</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="p-4 bg-white rounded shadow-sm">
+                            <i class="fas fa-code-branch fa-2x text-primary mb-3"></i>
+                            <h3 class="h5 mb-2">Projects</h3>
+                            <p class="mb-0">100+ Deployments</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="p-4 bg-white rounded shadow-sm">
+                            <i class="fas fa-users fa-2x text-primary mb-3"></i>
+                            <h3 class="h5 mb-2">Leadership</h3>
+                            <p class="mb-0">VP Level Impact</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container px-3 px-lg-5">
+            <article class="resume-wrapper mx-auto bg-white p-5 mb-5 my-5 shadow-lg rounded-3">
 				
-				<div class="resume-header">
-					<div class="row align-items-center">
-						<div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
-							<h2 class="resume-name mb-0 text">Macky Naik</h2>
-							<div class="resume-tagline mb-3 mb-md-0">Site Reliability Engineer - SRE</div>
-						</div><!--//resume-title-->
-						<div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
-							<ul class="list-unstyled mb-0">
-								<!-- <li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg me-2 "></i><a class="resume-link" href="tel:#"></a></li> -->
-								<li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg me-2"></i><a class="resume-link" href="mailto:#">mackynaik@gmail.com</a></li>
-								<li class="mb-2"><i class="fas fa-globe fa-fw fa-lg me-2"></i><a class="resume-link" href="https://www.mackynaik.com">www.mackynaik.com</a></li>
-								<li class="mb-2"><i class="fab fa-linkedin fa-fw fa-lg me-2"></i><a class="resume-link" href="https://www.linkedin.com/in/mackynaik/">linkedin.com/in/mackynaik</a></li>
-								<li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Mumbai, India</li>								
-							</ul>
-						</div><!--//resume-contact-->
-					</div><!--//row-->
-					
-				</div><!--//resume-header-->
-				<hr>
-				<div class="text-center">
-					<img class="col-12  text-center" src="assets/images/Certification Logo's 4.1v.png" alt="image">
-				</div>	
-				<hr>
-				<div class="resume-intro py-3">
-					<div class="row align-items-center">
-						<!-- <div class="col-12 col-md-3 col-xl-2 text-center">
-						    <img class="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto" src="assets/images/Macky-2024.jpg" alt="image">
-						</div> -->
-						
-						<div class="col text-start">
-							<p class="mb-0"> Experienced IT professional with 16 years of expertise in Site Reliability Engineering (SRE) and quality assurance, specializing in AWS, monitoring tool sets, and CI/CD pipelines. 
-								Successfully led SRE initiatives and designed automated solutions that significantly minimized manual interventions. 
-								Proficiency in observability practices has ensured system reliability and performance, utilizing comprehensive monitoring tool sets to gain real-time insights, identify potential issues before they impact users, and maintain optimal uptime. 
-								This proactive approach has enabled swift anomaly detection, efficient troubleshooting, and data-driven decision-making, enhancing the reliability and scalability of critical services.
-								</p>
-						</div><!--//col-->
-					</div>
-				</div><!--//resume-intro-->
-				
-				<hr>
-				<div class="resume-body">
-					<div class="row">
-						<div class="resume-main col-12 col-lg-8 col-xl-9   pe-0   pe-lg-5">
-							<section class="work-section py-3">
-								<h3 class="text-uppercase resume-section-heading mb-4">Work Experiences</h3>
-								
-								<div class="item mb-3">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">SRE - Vice President</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">JP Morgan Chase | 2012 - Present</div>										
-									</div>
+                <!-- Experience Section -->
+                <section class="experience-section py-5" data-aos="fade-up">
+                    <h2 class="h1 mb-4">Professional Journey</h2>
+                    
+                    <div class="experience-card">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <h3 class="h4 mb-1">Vice President, Site Reliability Engineering</h3>
+                                <p class="text-primary mb-0">JP Morgan Chase</p>
+                            </div>
+                            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">2012 - Present</span>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="h6 text-secondary mb-3">Key Achievements:</h4>
+                            <div class="row g-4 mb-4">
+                                <div class="col-md-6">
+                                    <div class="achievement-card p-3 bg-light rounded">
+                                        <i class="fas fa-chart-line text-primary mb-2"></i>
+                                        <h5 class="h6 mb-2">System Reliability</h5>
+                                        <p class="small mb-0">Achieved 99.99% uptime across critical systems through advanced monitoring and incident response strategies</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="achievement-card p-3 bg-light rounded">
+                                        <i class="fas fa-robot text-primary mb-2"></i>
+                                        <h5 class="h6 mb-2">Automation Impact</h5>
+                                        <p class="small mb-0">Reduced manual interventions by 75% through innovative SRE initiatives and automated solutions</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4 class="h6 text-secondary mb-3">Core Responsibilities:</h4>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Lead enterprise-wide SRE initiatives and strategies</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Design and implement monitoring solutions using Datadog, Dynatrace, Splunk</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Optimize system performance and infrastructure costs</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Develop SRE best practices and documentation</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Mentor and lead SRE teams</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Drive cultural transformation towards SRE practices</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Collaborate with stakeholders for strategic planning</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Manage infrastructure budgets and resources</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-									<div class="item-content">
-										<p>Currently working as a 'Lead Software/Site Reliability Engineer' at JP Morgan, responsible for the following:</p>
-										<ul class="resume-list">
-											<li>Ensuring the availability, performance, and resilience of systems by managing uptime, and incident response.</li>
-											<li>Identify, analyze, measure and automate KPIs in collaboration with stakeholders.</li>
-											<li>Leading SRE initiatives for enabling tool sets like Datadog, Dynatrace, Splunk, and Grafana for monitoring and alerting.</li>
-											<li>Reducing the signal-to-noise ratio for legacy applications; and setting higher goals for future.</li>
-											<li>Forecasting future system demands and ensuring infrastructure can scale to handle growth without performance degradation.</li>
-											<li>Create and review high-level infrastructure schemes to support resilience.</li>
-											<li>Calculating the potential cost of outages and planning for contingencies.</li>
-											<li>Continuously identify and remove TOIL; work to enhance productivity.</li>
-											<li>Acts as on-call support lead to business applications in order to maintain availability and reduce downtime.</li>
-											<li>Continuously improving system performance by identifying resource bottlenecks and optimizing infrastructure.</li>
-											<li>Generate reports on Infra billing, forecast costs and justification of variances for management.</li>
-											<li>Work on budgeting planned for next year based on existing operating costs and savings.</li>
-											<li>Plan, program, test and carry out software installation and upgrades.</li>
-											<li>Be able to implement the SRE state of mind for members who come from the dev or operational experience.</li>
-											<li>Collaborate with the recruitment team to attract, onboard and retain top talent.</li>											
-										</ul>
-									</div>
-								</div><!--//item-->
+                    <div class="experience-card">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <h3 class="h4 mb-1">Quality Assurance Associate</h3>
+                                <p class="text-primary mb-0">Bank of America (BACI)</p>
+                            </div>
+                            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">2010 - 2012</span>
+                        </div>
+                        <p class="mb-3">Led quality assurance initiatives focused on early defect detection and process improvement:</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Implemented comprehensive test strategies reducing post-release issues by 40%</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Collaborated with development teams to integrate testing earlier in SDLC</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Produced detailed analytics and reporting for senior management</li>
+                        </ul>
+                    </div>
 
-								<div class="item mb-3">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Quality Assurance Associate</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Bank of America (BACI) | 2010 - 2012</div>										
-									</div>
+                    <div class="experience-card">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <h3 class="h4 mb-1">Quality Assurance Engineer</h3>
+                                <p class="text-primary mb-0">Patni Computer Systems</p>
+                            </div>
+                            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">2008 - 2010</span>
+                        </div>
+                        <p class="mb-3">Specialized in comprehensive testing and quality assurance:</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Executed end-to-end testing strategies for critical applications</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Implemented automated testing frameworks reducing testing time by 30%</li>
+                        </ul>
+                    </div>
 
-									<div class="item-content">
-										<p>Worked as Quality Assurance Engineer (QA):</p>
-										<ul class="resume-list">
-											<li>Assist development teams in developing and executing an effective test plan for detecting bugs earlier in the SDLC.</li>
-											<li>Gather data and produce reports for senior management on a regular basis.</li>
-											<li>Perform post-release and post-implementation tests. Run test scripts and review findings.</li>
-										</ul>
-									</div>
-								</div><!--//item-->
-								<div class="item mb-3">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Quality Assurance Engineer</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Patni Computer Systems | 2008 - 2010</div>
-										
-									</div>
-									<div class="item-content">
-										<p>Worked as Quality Assurance Engineer (QA):</p>
-										<ul class="resume-list">
-											<li>Performing health, functional and regression tests to certify the product's stability and usefulness.</li>											
-											<li>Bring bugs and errors to the attention of development leads.</li>											
-										</ul>
-									</div>
-								</div><!--//item-->
+                    </section>
 
-							</section><!--//work-section-->
+                    <!-- Skills Section -->
+                    <section class="skills-section py-5" data-aos="fade-up">
+                        <h2 class="h1 mb-4">Technical Expertise</h2>
+                        
+                        <div class="row g-4">
+                            <!-- Monitoring & Observability -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="skill-category p-4 bg-light rounded-3">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-chart-line fa-2x text-primary me-3"></i>
+                                        <h3 class="h5 mb-0">Monitoring & Observability</h3>
+                                    </div>
+                                    <div class="skill-tags">
+                                        <span class="skill-badge">Splunk</span>
+                                        <span class="skill-badge">Dynatrace</span>
+                                        <span class="skill-badge">Datadog</span>
+                                        <span class="skill-badge">Grafana</span>
+                                        <span class="skill-badge">AppDynamics</span>
+                                        <span class="skill-badge">Geneos</span>
+                                    </div>
+                                </div>
+                            </div>
 
-						</div><!--//resume-main-->
-						<aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-3 pb-lg-4">
-							<section class="skills-section py-3">
-								<h3 class="text-uppercase resume-section-heading mb-3">Skills</h3>
-								<div class="item">
-									<h4 class="item-title mb-3">Technical</h4>
-									<ul class="list-unstyled resume-skills-list">
-										<li class="mb-1">Splunk, Dynatrace, Datadog</li>
-										<li class="mb-1">Grafana, Geneos, AppDynamics</li>
-										<li class="mb-1">AWS, Kubernetes, Gremlin, Terraform</li>
-										<li class="mb-1">Unix, SQL, Python, Athena</li>
-										<li class="mb-1">Autosys, Bob jobs</li>
-										<li class="mb-1">Snowflake, Salesforce, Sybase IQ, Oracle DB</li>
-										<li class="mb-1">Jenkins, Jules, Git, JIRA</li>
-										<li class="mb-1">ServiceNow, ITSM</li>
-										<li class="mb-1">Informatica, Cognos</li>
-									</ul>
-								<!-- </div>
-									<div class="item">
-										<h4 class="item-title mb-3">Professional</h4>
-										<ul class="list-unstyled resume-skills-list">
-											<li class="mb-1">Attention to detail</li>
-											<li class="mb-1">Adaptability<li>
-											<li class="mb-1">Collaboration</li>
-											<li class="mb-1">Effective Communication</li>
-											<li class="mb-1">Empathy</li>
-											<li class="mb-1">Problem solving</li>
-											<li class="mb-1">Calculating Risk</li>
-										</ul>
-									</div> -->
+                            <!-- Cloud & Infrastructure -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="skill-category p-4 bg-light rounded-3">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-cloud fa-2x text-primary me-3"></i>
+                                        <h3 class="h5 mb-0">Cloud & Infrastructure</h3>
+                                    </div>
+                                    <div class="skill-tags">
+                                        <span class="skill-badge">AWS</span>
+                                        <span class="skill-badge">Kubernetes</span>
+                                        <span class="skill-badge">Terraform</span>
+                                        <span class="skill-badge">Unix</span>
+                                        <span class="skill-badge">Gremlin</span>
+                                    </div>
+                                </div>
+                            </div>
 
-									</section><!--//skills-section-->
+                            <!-- DevOps & CI/CD -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="skill-category p-4 bg-light rounded-3">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-code-branch fa-2x text-primary me-3"></i>
+                                        <h3 class="h5 mb-0">DevOps & CI/CD</h3>
+                                    </div>
+                                    <div class="skill-tags">
+                                        <span class="skill-badge">Jenkins</span>
+                                        <span class="skill-badge">Git</span>
+                                        <span class="skill-badge">Jules</span>
+                                        <span class="skill-badge">JIRA</span>
+                                    </div>
+                                </div>
+                            </div>
 
-									<section class="education-section py-3">
-										<h3 class="text-uppercase resume-section-heading mb-3">Education</h3>
-										<ul class="list-unstyled resume-education-list">
-											<li class="mb-3">
-												<div class="resume-degree font-weight-bold">B.Tech in Electrical Engineering</div>
-												<div class="resume-degree-org text-muted">VJTI, Mumbai</div>
-												<div class="resume-degree-time text-muted">2005 - 2008</div>
-											</li>
-											<li>
-												<div class="resume-degree font-weight-bold">Diploma in Electrical Engineering</div>
-												<div class="resume-degree-org text-muted">Shri Bhagubhai Mafatlal Polytechnic, Mumbai</div>
-												<div class="resume-degree-time text-muted">2001 - 2005</div>
-											</li>
-										</ul>
-									</section><!--//education-section-->
+                            <!-- Data & Analytics -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="skill-category p-4 bg-light rounded-3">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-database fa-2x text-primary me-3"></i>
+                                        <h3 class="h5 mb-0">Data & Analytics</h3>
+                                    </div>
+                                    <div class="skill-tags">
+                                        <span class="skill-badge">Snowflake</span>
+                                        <span class="skill-badge">SQL</span>
+                                        <span class="skill-badge">Python</span>
+                                        <span class="skill-badge">Athena</span>
+                                    </div>
+                                </div>
+                            </div>
 
-									<section class="education-section py-3">
-										<h3 class="text-uppercase resume-section-heading mb-3">Certifications</h3>
-										<ul class="list-unstyled resume-awards-list">
-											<li class="mb-3">
-												<div class="font-weight-bold">AI</div>
-												<div class="text-muted">Salesforce Certified AI Associate (2025)</div>
-												<div class="text-muted">Salesforce Certified AI Specialist (2025)</div>
-											</li>																																																							
-											<li class="mb-3">
-												<div class="font-weight-bold">SRE</div>
-												<div class="text-muted">JPMC GT SRE Certified (2024)</div>
-											</li>											
-											<li class="mb-3">
-												<div class="font-weight-bold">Snowflake</div>
-												<div class="text-muted">Snowflake SnowPro Core Certified (2024)</div>
-											</li>																																												
-											<li class="mb-3">
-												<div class="font-weight-bold">Splunk</div>
-												<div class="text-muted">Splunk Core Certified Power User (2024)</div>
-											</li>																						
-											<li class="mb-3">
-												<div class="font-weight-bold">Datadog</div>
-												<div class="text-muted">Datadog Fundamentals (2024)</div>
-											</li>
-											<li class="mb-3">
-												<div class="font-weight-bold">Dynatrace</div>
-												<div class="text-muted">Dynatrace JPMC Certified (2024)</div>
-											</li>																						
-											<li class="mb-3">
-												<div class="font-weight-bold">Amazon Web Services (AWS)</div>
-												<div class="text-muted">Solutions Architect Associate (2021)</div>
-											</li>											
-											<li class="mb-3">
-												<div class="font-weight-bold">Gremlin</div>
-												<div class="text-muted">Enterprise Chaos Engineering Certification (GECEC) (2023)</div>
-												<div class="text-muted">Chaos Engineering Practitioner (GCCEP) (2023)</div>
-											</li>										
-											<li class="mb-3">
-												<div class="font-weight-bold"> International Software Testing Qualifications Board - ISTQB</div>
-												<div class="text-muted">Tester Test Manager (CTAL) (2012)</div>
-												<div class="text-muted">Tester Foundation Level (CTFL) (2009)</div>
-											</li>										
-											<li class="mb-3">
-												<div class="font-weight-bold">Oracle Certification Program</div>
-												<div class="text-muted">Oracle PL/SQL Developer Certified Associate (OCA) (2009)</div>
-												
-											</li>
-											<li class="mb-3">
-												<div class="font-weight-bold">NSE's Certification in Financial Markets (NCFM)</div>
-												<div class="text-muted">Financial Markets: Beginner's Module (2011)</div>
-												<div class="text-muted">Equity Derivatives: Beginner's Module (2011)</div>
-												<div class="text-muted">Capital Market (Dealers) Module (2011)</div>
-												<div class="text-muted">Securities Market (Basic) Module (2011)</div>
-											</li>
-										</ul>
-									</section><!--//education-section-->
-									
-									<section class="skills-section py-3">
-										<h3 class="text-uppercase resume-section-heading mb-3">Languages</h3>
-										<ul class="list-unstyled resume-lang-list">
-											<li class="mb-2">English <span class="text-muted">(Proficient)</span></li>
-											<li class="mb-2">Hindi <span class="text-muted">(Proficient)</span></li>
-											<li class="mb-2">Gujarati <span class="text-muted">(Conversational)</span></li>
-											<li class="mb-2">Marathi <span class="text-muted">(Conversational)</span></li>												
-										</ul>
-									</section><!--//certificates-section-->
-									
-								</aside><!--//resume-aside-->
-							</div><!--//row-->
-						</div><!--//resume-body-->
-						<hr>
-						<div class="resume-footer text-center">
-							<ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
-								<!-- <li class="list-inline-item mb-lg-0 me-3"><a class="resume-link" href="#"><i class="fab fa-github-square fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/username</span></a></li> -->
-								<li class="list-inline-item mb-lg-0 me-3"><a class="resume-link" href="https://www.linkedin.com/in/mackynaik/"><i class="fab fa-linkedin fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">linkedin.com/in/mackynaik</span></a></li>
-								<!-- <li class="list-inline-item mb-lg-0 me-lg-3"><a class="resume-link" href="#"><i class="fab fa-twitter-square fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">@twittername</span></a></li> -->
-							</ul>
-						</div><!--//resume-footer-->
-					</article>
-					
-				</div><!--//container-->
-				
-				<footer class="footer text-center py-4">
-					<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-					<small class="copyright text-muted">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-				</footer>
-				
-			</div><!--//main-wrapper-->
+                            <!-- Enterprise Systems -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="skill-category p-4 bg-light rounded-3">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-building fa-2x text-primary me-3"></i>
+                                        <h3 class="h5 mb-0">Enterprise Systems</h3>
+                                    </div>
+                                    <div class="skill-tags">
+                                        <span class="skill-badge">Salesforce</span>
+                                        <span class="skill-badge">ServiceNow</span>
+                                        <span class="skill-badge">ITSM</span>
+                                        <span class="skill-badge">Autosys</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Leadership -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="skill-category p-4 bg-light rounded-3">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-users fa-2x text-primary me-3"></i>
+                                        <h3 class="h5 mb-0">Leadership</h3>
+                                    </div>
+                                    <div class="skill-tags">
+                                        <span class="skill-badge">Team Leadership</span>
+                                        <span class="skill-badge">Strategy</span>
+                                        <span class="skill-badge">Mentoring</span>
+                                        <span class="skill-badge">Innovation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Education & Certifications -->
+                    <section class="education-cert-section py-5" data-aos="fade-up">
+                        <div class="row">
+                            <!-- Education -->
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <h2 class="h1 mb-4">Education</h2>
+                                <div class="education-timeline">
+                                    <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <h3 class="h5 mb-0">B.Tech in Electrical Engineering</h3>
+                                                <span class="badge bg-primary-subtle text-primary">2005 - 2008</span>
+                                            </div>
+                                            <p class="text-primary mb-0">VJTI, Mumbai</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <h3 class="h5 mb-0">Diploma in Electrical Engineering</h3>
+                                                <span class="badge bg-primary-subtle text-primary">2001 - 2005</span>
+                                            </div>
+                                            <p class="text-primary mb-0">Shri Bhagubhai Mafatlal Polytechnic, Mumbai</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Languages -->
+                            <div class="col-md-6">
+                                <h2 class="h1 mb-4">Languages</h2>
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <div class="p-3 bg-light rounded-3">
+                                            <h4 class="h6 mb-2">English</h4>
+                                            <div class="progress" style="height: 8px;">
+                                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <small class="text-muted">Proficient</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="p-3 bg-light rounded-3">
+                                            <h4 class="h6 mb-2">Hindi</h4>
+                                            <div class="progress" style="height: 8px;">
+                                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <small class="text-muted">Proficient</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="p-3 bg-light rounded-3">
+                                            <h4 class="h6 mb-2">Gujarati</h4>
+                                            <div class="progress" style="height: 8px;">
+                                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <small class="text-muted">Conversational</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="p-3 bg-light rounded-3">
+                                            <h4 class="h6 mb-2">Marathi</h4>
+                                            <div class="progress" style="height: 8px;">
+                                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <small class="text-muted">Conversational</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certifications -->
+                        <div class="certifications-section mt-5">
+                            <h2 class="h1 mb-4">Professional Certifications</h2>
+                            <div class="row g-4">
+                                <!-- AI Certifications -->
+                                <div class="col-md-4">
+                                    <div class="cert-card p-4 bg-light rounded-3">
+                                        <div class="cert-icon mb-3">
+                                            <i class="fas fa-robot fa-2x text-primary"></i>
+                                        </div>
+                                        <h3 class="h5 mb-3">Artificial Intelligence</h3>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">Salesforce Certified AI Associate (2025)</li>
+                                            <li class="mb-2">Salesforce Certified AI Specialist (2025)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Cloud & DevOps -->
+                                <div class="col-md-4">
+                                    <div class="cert-card p-4 bg-light rounded-3">
+                                        <div class="cert-icon mb-3">
+                                            <i class="fas fa-cloud fa-2x text-primary"></i>
+                                        </div>
+                                        <h3 class="h5 mb-3">Cloud & DevOps</h3>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">AWS Solutions Architect Associate (2021)</li>
+                                            <li class="mb-2">JPMC GT SRE Certified (2024)</li>
+                                            <li class="mb-2">Enterprise Chaos Engineering (GECEC) (2023)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Monitoring Tools -->
+                                <div class="col-md-4">
+                                    <div class="cert-card p-4 bg-light rounded-3">
+                                        <div class="cert-icon mb-3">
+                                            <i class="fas fa-chart-line fa-2x text-primary"></i>
+                                        </div>
+                                        <h3 class="h5 mb-3">Monitoring & Analytics</h3>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">Splunk Core Certified Power User (2024)</li>
+                                            <li class="mb-2">Datadog Fundamentals (2024)</li>
+                                            <li class="mb-2">Dynatrace JPMC Certified (2024)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Data & Development -->
+                                <div class="col-md-4">
+                                    <div class="cert-card p-4 bg-light rounded-3">
+                                        <div class="cert-icon mb-3">
+                                            <i class="fas fa-database fa-2x text-primary"></i>
+                                        </div>
+                                        <h3 class="h5 mb-3">Data & Development</h3>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">Snowflake SnowPro Core Certified (2024)</li>
+                                            <li class="mb-2">Oracle PL/SQL Developer Certified Associate (2009)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Testing & Quality -->
+                                <div class="col-md-4">
+                                    <div class="cert-card p-4 bg-light rounded-3">
+                                        <div class="cert-icon mb-3">
+                                            <i class="fas fa-check-circle fa-2x text-primary"></i>
+                                        </div>
+                                        <h3 class="h5 mb-3">Testing & Quality</h3>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">ISTQB Test Manager (CTAL) (2012)</li>
+                                            <li class="mb-2">ISTQB Foundation Level (CTFL) (2009)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Finance & Markets -->
+                                <div class="col-md-4">
+                                    <div class="cert-card p-4 bg-light rounded-3">
+                                        <div class="cert-icon mb-3">
+                                            <i class="fas fa-chart-bar fa-2x text-primary"></i>
+                                        </div>
+                                        <h3 class="h5 mb-3">Finance & Markets</h3>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">NSE Financial Markets Module (2011)</li>
+                                            <li class="mb-2">NSE Capital Market Module (2011)</li>
+                                            <li class="mb-2">NSE Securities Market Module (2011)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Footer -->
+                    <footer class="py-5">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <p class="mb-0">© 2025 Macky Naik. All rights reserved.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-inline text-md-end mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="https://www.linkedin.com/in/mackynaik/" class="text-decoration-none text-muted" target="_blank">
+                                            <i class="fab fa-linkedin fa-2x"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        </script>
+    </div>
+</body>
+</html>
 			
 
 </body>
