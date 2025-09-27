@@ -41,8 +41,28 @@
             color: var(--text-primary);
         }
         .hero-section {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
-            padding: 6rem 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 7rem 0 6rem;
+            position: relative;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .hero-section .badge {
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        .hero-section .lead {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+        .hero-section .btn {
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        .hero-section .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         .skill-badge {
             background: var(--primary-color);
@@ -68,29 +88,39 @@
 <body>
     <div class="main-wrapper">
         <!-- Hero Section -->
-        <section class="hero-section">
+        <section class="hero-section position-relative">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0">
-                        <img class="rounded-circle img-thumbnail shadow-lg" src="assets/images/Macky-2024.jpg" alt="Macky Naik" style="width: 250px; height: 250px; object-fit: cover;">
-                    </div>
-                    <div class="col-12 col-lg-8">
-                        <div class="hero-content" data-aos="fade-up">
-                            <h1 class="display-4 fw-bold mb-3">Macky Naik</h1>
-                            <h2 class="h3 text-secondary mb-4">Vice President, Site Reliability Engineering</h2>
-                            <p class="lead mb-4">17+ years of comprehensive IT expertise spanning Quality Engineering, Development, Operations, Site Reliability Engineering (SRE), and FinOps. Driving enterprise transformation through cloud architecture, automated solutions, and cost-optimized reliability practices.</p>
-                            <div class="d-flex flex-wrap gap-3">
-                                <a href="mailto:mackynaik@gmail.com" class="btn btn-primary btn-lg">
-                                    <i class="fas fa-envelope me-2"></i>Contact Me
-                                </a>
-                                <a href="https://www.linkedin.com/in/mackynaik/" class="btn btn-outline-primary btn-lg" target="_blank">
-                                    <i class="fab fa-linkedin me-2"></i>LinkedIn
-                                </a>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="hero-content text-center" data-aos="fade-up">
+                            <div class="mb-4">
+                                <h1 class="display-4 fw-bold mb-2">Macky Naik</h1>
+                                <h2 class="h3 text-secondary fw-normal">Vice President, Site Reliability Engineering</h2>
+                            </div>
+                            
+                            <div class="row justify-content-center mb-5">
+                                <div class="col-lg-9">
+                                    <p class="lead text-muted">
+                                        17+ years of comprehensive IT expertise spanning Site Reliability Engineering (SRE), FinOps, Development, Quality Engineering and Operations. Driving enterprise transformation through cloud architecture, automated solutions, and cost-optimized reliability practices.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="hero-actions">
+                                <div class="d-flex flex-wrap justify-content-center gap-3">
+                                    <a href="mailto:mackynaik@gmail.com" class="btn btn-primary btn-lg px-4">
+                                        <i class="fas fa-envelope me-2"></i>Contact Me
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/mackynaik/" class="btn btn-outline-primary btn-lg px-4" target="_blank">
+                                        <i class="fab fa-linkedin me-2"></i>LinkedIn
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="hero-bg-shape position-absolute bottom-0 start-0 w-100" style="height: 5px; background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);"></div>
         </section>
 
         <!-- Key Info Section -->
@@ -162,7 +192,7 @@
                                     <div class="achievement-card p-3 bg-light rounded">
                                         <i class="fas fa-database text-primary mb-2"></i>
                                         <h5 class="h6 mb-2">Data Engineering Excellence</h5>
-                                        <p class="small mb-0">Led enterprise ETL processing 200 millons records daily data, achieving 99.9% data accuracy using Informatica</p>
+                                        <p class="small mb-0">Led enterprise ETL processing 200 million daily records, achieving 99.9% data accuracy using Informatica</p>
                                     </div>
                                 </div>
 								<div class="col-md-6">
@@ -236,9 +266,119 @@
 
                     </section>
 
+
+
+                    <!-- Certifications -->
+                        <div class="certifications-section mt-5">
+                            <h2 class="h1 mb-4">Professional Certifications</h2>
+                            <div class="row g-4">
+                                <!-- Certification Logos Grid -->
+                                <div class="certification-logos p-4 bg-light rounded-3 mb-4">
+                                    <h4 class="h5 mb-4 text-center">Featured Certifications</h4>
+                                    <div class="row g-4 justify-content-center">
+                                        <!-- Certifications -->
+                                        <div class="col-12">
+                                            <div class="cert-logo-wrapper p-3 bg-white rounded-3 shadow-sm text-center" data-aos="fade-up" data-aos-delay="300" style="max-width: 950px; margin: 0 auto;">
+                                                <img src="assets/images/Certification Logo's 4v.png" alt="Certifications" class="img-fluid mb-2" style="width: 100%; height: 100%; object-fit: contain;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Cloud & DevOps -->
+                                <div class="col-md-4">
+                                    <div class="cert-card p-4 bg-light rounded-3">
+                                        <div class="cert-icon mb-3">
+                                            <i class="fas fa-cloud fa-2x text-primary"></i>
+                                        </div>
+                                        <h3 class="h5 mb-3">Cloud & DevOps</h3>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">AWS Solutions Architect Associate (2021)</li>
+                                            <li class="mb-2">JPMC GT Site Reliability Engineering - Certified SRE (2024)</li>
+                                            <li class="mb-2">Gremlin Enterprise Chaos Engineering (GECEC) (2023)</li>
+                                            <li class="mb-2">Gremlin Chaos Engineering Practitioner (GCCEP) (2023)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Data & Development -->
+                                <div class="col-md-4">
+                                    <div class="cert-card p-4 bg-light rounded-3">
+                                        <div class="cert-icon mb-3">
+                                            <i class="fas fa-database fa-2x text-primary"></i>
+                                        </div>
+                                        <h3 class="h5 mb-3">Data & Development</h3>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">Snowflake SnowPro Core Certified (2024)</li>
+                                            <li class="mb-2">Oracle PL/SQL Developer Certified Associate (2009)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Monitoring Tools -->
+                                <div class="col-md-4">
+                                    <div class="cert-card p-4 bg-light rounded-3">
+                                        <div class="cert-icon mb-3">
+                                            <i class="fas fa-chart-line fa-2x text-primary"></i>
+                                        </div>
+                                        <h3 class="h5 mb-3">Monitoring & Analytics</h3>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">Splunk Core Certified Power User (2024)</li>
+                                            <li class="mb-2">Datadog Fundamentals (2024)</li>
+                                            <li class="mb-2">Dynatrace JPMC Certified (2024)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+								<!-- AI Certifications -->
+                                <div class="col-md-4">
+                                    <div class="cert-card p-4 bg-light rounded-3">
+                                        <div class="cert-icon mb-3">
+                                            <i class="fas fa-robot fa-2x text-primary"></i>
+                                        </div>
+                                        <h3 class="h5 mb-3">Artificial Intelligence</h3>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">Salesforce Certified AI Associate (2025)</li>
+                                            <li class="mb-2">Salesforce Certified AI Specialist (2025)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Testing & Quality -->
+                                <div class="col-md-4">
+                                    <div class="cert-card p-4 bg-light rounded-3">
+                                        <div class="cert-icon mb-3">
+                                            <i class="fas fa-check-circle fa-2x text-primary"></i>
+                                        </div>
+                                        <h3 class="h5 mb-3">Testing & Quality</h3>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">ISTQB Test Manager (CTAL) (2012)</li>
+                                            <li class="mb-2">ISTQB Foundation Level (CTFL) (2009)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Finance & Markets -->
+                                <div class="col-md-4">
+                                    <div class="cert-card p-4 bg-light rounded-3">
+                                        <div class="cert-icon mb-3">
+                                            <i class="fas fa-chart-bar fa-2x text-primary"></i>
+                                        </div>
+                                        <h3 class="h5 mb-3">Finance & Markets</h3>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">NSE Financial Markets Module (2011)</li>
+                                            <li class="mb-2">NSE Capital Market Module (2011)</li>
+                                            <li class="mb-2">NSE Securities Market Module (2011)</li>
+                                            <li class="mb-2">NSE Equity Derivative Module (2011)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     <!-- Skills Section -->
                     <section class="skills-section py-5" data-aos="fade-up">
                         <h2 class="h1 mb-4">Technical Expertise</h2>
+                        
                         
                         <div class="row g-4">
                             <!-- Monitoring & Observability -->
@@ -304,8 +444,8 @@
                                         <span class="skill-badge">SQL</span>
                                         <span class="skill-badge">Python</span>
                                         <span class="skill-badge">Athena</span>
-										<span class="skill-badge">Informatica</span>
-										<span class="skill-badge">Alteryx</span>										
+                                        <span class="skill-badge">Informatica</span>
+                                        <span class="skill-badge">Alteryx</span>
                                     </div>
                                 </div>
                             </div>
@@ -344,6 +484,7 @@
                             </div>
                         </div>
                     </section>
+                    
 
                     <!-- Education & Certifications -->
                     <section class="education-cert-section py-5" data-aos="fade-up">
@@ -417,100 +558,7 @@
                             </div>
                         </div>
 
-                        <!-- Certifications -->
-                        <div class="certifications-section mt-5">
-                            <h2 class="h1 mb-4">Professional Certifications</h2>
-                            <div class="row g-4">
-                                <!-- Cloud & DevOps -->
-                                <div class="col-md-4">
-                                    <div class="cert-card p-4 bg-light rounded-3">
-                                        <div class="cert-icon mb-3">
-                                            <i class="fas fa-cloud fa-2x text-primary"></i>
-                                        </div>
-                                        <h3 class="h5 mb-3">Cloud & DevOps</h3>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="mb-2">AWS Solutions Architect Associate (2021)</li>
-                                            <li class="mb-2">JPMC GT Site Reliability Engineering - Certified SRE (2024)</li>
-                                            <li class="mb-2">Gremlin Enterprise Chaos Engineering (GECEC) (2023)</li>
-											<li class="mb-2">Gremlin Chaos Engineering Practitioner (GCCEP) (2023)</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <!-- Data & Development -->
-                                <div class="col-md-4">
-                                    <div class="cert-card p-4 bg-light rounded-3">
-                                        <div class="cert-icon mb-3">
-                                            <i class="fas fa-database fa-2x text-primary"></i>
-                                        </div>
-                                        <h3 class="h5 mb-3">Data & Development</h3>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="mb-2">Snowflake SnowPro Core Certified (2024)</li>
-                                            <li class="mb-2">Oracle PL/SQL Developer Certified Associate (2009)</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <!-- Monitoring Tools -->
-                                <div class="col-md-4">
-                                    <div class="cert-card p-4 bg-light rounded-3">
-                                        <div class="cert-icon mb-3">
-                                            <i class="fas fa-chart-line fa-2x text-primary"></i>
-                                        </div>
-                                        <h3 class="h5 mb-3">Monitoring & Analytics</h3>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="mb-2">Splunk Core Certified Power User (2024)</li>
-                                            <li class="mb-2">Datadog Fundamentals (2024)</li>
-                                            <li class="mb-2">Dynatrace JPMC Certified (2024)</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-								<!-- AI Certifications -->
-                                <div class="col-md-4">
-                                    <div class="cert-card p-4 bg-light rounded-3">
-                                        <div class="cert-icon mb-3">
-                                            <i class="fas fa-robot fa-2x text-primary"></i>
-                                        </div>
-                                        <h3 class="h5 mb-3">Artificial Intelligence</h3>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="mb-2">Salesforce Certified AI Associate (2025)</li>
-                                            <li class="mb-2">Salesforce Certified AI Specialist (2025)</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <!-- Testing & Quality -->
-                                <div class="col-md-4">
-                                    <div class="cert-card p-4 bg-light rounded-3">
-                                        <div class="cert-icon mb-3">
-                                            <i class="fas fa-check-circle fa-2x text-primary"></i>
-                                        </div>
-                                        <h3 class="h5 mb-3">Testing & Quality</h3>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="mb-2">ISTQB Test Manager (CTAL) (2012)</li>
-                                            <li class="mb-2">ISTQB Foundation Level (CTFL) (2009)</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <!-- Finance & Markets -->
-                                <div class="col-md-4">
-                                    <div class="cert-card p-4 bg-light rounded-3">
-                                        <div class="cert-icon mb-3">
-                                            <i class="fas fa-chart-bar fa-2x text-primary"></i>
-                                        </div>
-                                        <h3 class="h5 mb-3">Finance & Markets</h3>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="mb-2">NSE Financial Markets Module (2011)</li>
-                                            <li class="mb-2">NSE Capital Market Module (2011)</li>
-                                            <li class="mb-2">NSE Securities Market Module (2011)</li>
-											<li class="mb-2">NSE Euqity Derivative Module (2011)</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </section>
 
                     <!-- Footer -->
@@ -546,8 +594,3 @@
     </div>
 </body>
 </html>
-			
-
-</body>
-</html> 
-
